@@ -30,3 +30,6 @@ build-x86_64: $(kernel_object_files) $(x86_64_object_files)
 
 # Set build-x86_64 as default
 .DEFAULT_GOAL := build-x86_64
+
+clean:
+	rm -rf build/ dist/ targets/x86_64/iso/boot/kernel.bin dist/x86_64/kernel.iso
